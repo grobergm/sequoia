@@ -42,9 +42,9 @@ logo.addEventListener('mousemove',function(event){
 
 
   TweenLite.to(element, 1, {
-    y: yPos * 10 * yMod * index, 
+    y: yPos * 10 * yMod * index,
     x: xPos * 10 * xMod * index,
-    ease: Power1.easeOut,
+    ease: Circ.inOut,
   });
     
   })  
@@ -56,7 +56,7 @@ logo.addEventListener('mouseleave',function(event){
   TweenLite.to(element, 1, {
     y: 0, 
     x: 0,
-    ease: Power1.easeOut,
+    ease: Circ.inOut,
   });
     
   })  
